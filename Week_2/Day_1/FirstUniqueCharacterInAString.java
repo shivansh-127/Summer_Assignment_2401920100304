@@ -1,0 +1,17 @@
+package Week_2.Day_1;
+
+public class FirstUniqueCharacterInAString {
+     public int firstUniqChar(String s) {
+        int[] freq = new int[26];
+        int n = s.length();
+        for(int i=0; i<n; i++) {
+            freq[s.charAt(i)-'a']++;
+        }
+        for(int i=0; i<n; i++) {
+            if(freq[s.charAt(i)-'a'] == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
