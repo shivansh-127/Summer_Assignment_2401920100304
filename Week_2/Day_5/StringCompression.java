@@ -1,7 +1,5 @@
 package Week_2.Day_5;
 
-import java.util.Arrays;
-
 /* TC: O(N)
    SC: O(1) */
 public class StringCompression {
